@@ -1,4 +1,4 @@
-# Deployment Instructies voor SportGemz Website
+# Deployment Instructies voor SportGemz Webapp
 
 ## Optie 1: GitHub Pages (Gratis)
 
@@ -55,8 +55,13 @@ Je website krijgt automatisch een URL zoals: `https://sportgemz-website.vercel.a
 
 ---
 
-## Aanbeveling
+## Aanbeveling voor Webapp
 
-Voor de snelste setup: **Netlify Drop** (optie 2, drag & drop)
-Voor automatische deployments: **GitHub Pages** (optie 1) of **Netlify Git Integration** (optie 2)
+**Voor webapp deployment naar sportgemz.nl:**
+- **Vercel** (optie 3) - Beste keuze voor moderne webapps, gratis, makkelijk custom domain
+- **Netlify** (optie 2) - Ook uitstekend, gratis, goede features
+
+**GitHub Pages** is alleen geschikt voor statische websites zonder backend.
+
+Zie `DEPLOYMENT_WEBAPP.md` voor uitgebreide instructies voor webapp deployment.
 

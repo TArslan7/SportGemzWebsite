@@ -1,6 +1,13 @@
 # DNS Configuratie voor sportgemz.nl
 
-## GitHub Pages met Eigen Domein
+## ⚠️ BELANGRIJK: Voor Webapp Deployment
+
+Voor een **webapp** gebruik je **Vercel** of **Netlify** in plaats van GitHub Pages!
+Zie `DEPLOYMENT_WEBAPP.md` voor volledige instructies.
+
+---
+
+## GitHub Pages met Eigen Domein (Alleen voor statische websites)
 
 ### Stap 1: GitHub Pages Instellingen
 
@@ -69,7 +76,35 @@ Doe beide bovenstaande opties om zowel sportgemz.nl als www.sportgemz.nl te late
 
 ---
 
-## Alternatief: Netlify (Eenvoudiger DNS Setup)
+## Vercel (Aanbevolen voor Webapps)
+
+### DNS Records voor sportgemz.nl op Vercel:
+
+**Voor apex domain (sportgemz.nl):**
+```
+Type: A
+Name: @ (of leeg)
+Value: 76.76.21.21
+```
+
+**Voor www subdomain:**
+```
+Type: CNAME
+Name: www
+Value: cname.vercel-dns.com
+```
+
+### Stappen:
+1. Deploy op Vercel (zie DEPLOYMENT_WEBAPP.md)
+2. Ga naar Project Settings > Domains
+3. Voeg `sportgemz.nl` en `www.sportgemz.nl` toe
+4. Vercel geeft je exacte DNS instructies
+5. Voeg bovenstaande records toe bij je DNS provider
+6. Wacht op DNS propagatie (1-24 uur)
+
+---
+
+## Netlify (Alternatief voor Webapps)
 
 Als je liever Netlify gebruikt voor betere DNS ondersteuning:
 
