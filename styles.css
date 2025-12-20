@@ -351,30 +351,16 @@ body {
 
 /* About Section */
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.about-text .lead {
-    font-size: 1.3rem;
-    color: var(--neon-green);
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-}
-
-.about-text p {
-    font-size: 1.1rem;
-    color: var(--text-gray);
-    margin-bottom: 1rem;
-    line-height: 1.8;
-}
-
+/* Stat Cards - Uncomment when using stat cards
 .about-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    margin-top: 3rem;
 }
 
 .stat-card {
@@ -401,6 +387,21 @@ body {
 .stat-label {
     color: var(--text-gray);
     font-size: 1rem;
+}
+*/
+
+.about-text .lead {
+    font-size: 1.3rem;
+    color: var(--neon-green);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+    line-height: 1.8;
 }
 
 /* Services Section */
@@ -639,9 +640,6 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .about-stats {
-        grid-template-columns: 1fr;
-    }
 
     .contact-content {
         grid-template-columns: 1fr;
