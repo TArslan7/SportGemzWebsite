@@ -452,6 +452,29 @@ body {
     line-height: 1.8;
 }
 
+.services-summary {
+    margin-top: 3rem;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    background: rgba(0, 255, 136, 0.05);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    border-radius: 15px;
+}
+
+.services-summary p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.services-summary strong {
+    color: var(--neon-green);
+}
+
 /* Contact Section */
 .contact-content {
     display: grid;
